@@ -8,8 +8,7 @@ const FAQ = () => (
               <div class="row justify-content-center text-center">
                   <div class="col-lg-12">
                       <i class="ti-comments title-icon text-muted"></i>
-                      <h3 class="title">Our <span class="font-weight-bold">Support</span> Center</h3>
-                      <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+                      <h3 class="title">Frequently asked <span class="font-weight-bold">questions</span></h3>
                   </div>
               </div>
               <div class="row mt-5">

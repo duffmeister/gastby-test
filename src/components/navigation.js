@@ -14,18 +14,14 @@ const Navigation = () => (
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mx-auto">
-
                   <li class="nav-item">
-                    <Link to="/lp/unlimited-plans" class="nav-link" activeClassName="nav-link active">Unlimited</Link>
+                      <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
                   <li class="nav-item">
                     <Link to="/about" class="nav-link" activeClassName="nav-link active">About Us</Link>
                   </li>
                   <li class="nav-item">
                     <Link to="/careers" class="nav-link" activeClassName="nav-link active">Careers</Link>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
               </ul>
               <div>

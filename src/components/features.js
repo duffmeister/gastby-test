@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import partnerLogo from "../images/shopify-partner-logo.png"
+
 const Hero = ({headline, dek, nuts}) => (
 
     <section class="section" id="services">
@@ -27,6 +29,11 @@ const Hero = ({headline, dek, nuts}) => (
                   </div>
               </div>
             ))}
+            </div>
+            <div class="row justify-content-center text-center mt-5 mb-5">
+              <div class="col-sm">
+                <img src={partnerLogo} width="200"/>
+              </div>
             </div>
         </div>
     </section>

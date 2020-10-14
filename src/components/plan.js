@@ -7,7 +7,7 @@ const Plan = () => (
     <div class="container-sm">
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
-                <h3 class="title">Our <span class="font-weight-bold"></span></h3>
+                <h3 class="title">Get started <span class="font-weight-bold">today</span></h3>
                 <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
             </div>
         </div>
@@ -23,7 +23,7 @@ const Plan = () => (
                       <i class="text-custom">1</i>
                   </div>
                   <h5 class="mt-3">Create your tasks</h5>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud .</p>
+                  <p class="text-muted mt-3">Send your todo list, wish list, and any ad hoc requests as they come.</p>
               </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Plan = () => (
                       <i class="text-custom">2</i>
                   </div>
                   <h5 class="mt-3">Work with an expert</h5>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud .</p>
+                  <p class="text-muted mt-3">Watch your task list disappear with real time updates on progress.</p>
               </div>
           </div>
           <div class="col-lg-4 mt-2">
@@ -56,7 +56,7 @@ const Plan = () => (
                       <i class="text-custom">3</i>
                   </div>
                   <h5 class="mt-3">Do your thing</h5>
-                  <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud .</p>
+                  <p class="text-muted mt-3">Focus on growing your business and keeping your customers happy.</p>
               </div>
           </div>
         </div>

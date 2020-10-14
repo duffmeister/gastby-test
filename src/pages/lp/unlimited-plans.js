@@ -23,11 +23,6 @@ const IndexPage = () => (
     <Features
       nuts={[
         {
-          icon: "ti-star",
-          heading: "US based experts",
-          text: "Work with an awesome team of Shopify experts."
-        },
-        {
           icon: "ti-timer",
           heading: "Blazing fast turnaround",
           text: "Blitz through your list of site tweaks and updates."
@@ -36,13 +31,18 @@ const IndexPage = () => (
           icon: "ti-heart",
           heading: "Help you can depend on",
           text: "No HR issues, interviews, expensive agencies, or flakey contractors."
+        },
+        {
+          icon: "ti-star",
+          heading: "All star Shopify experts",
+          text: "Work with an awesome team of top Shopify experts."
         }
       ]}
     />
     <Explainer/>
     <Plan/>
-    <FAQ/>
     <CTA/>
+    <FAQ/>
     <Footer/>
   </Layout>
 )
