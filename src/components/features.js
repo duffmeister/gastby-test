@@ -5,13 +5,15 @@ const Hero = ({headline, dek, nuts}) => (
 
     <section class="section" id="services">
         <div class="container">
-            <div class="row justify-content-center text-center mt-5">
+            { headline != "" ?
+            <div class="row justify-content-center text-center mt-5 mb-5">
                 <div class="col-lg-12">
                     <h3 class="title">{headline}</h3>
                     <p class="text-muted mt-3 title-subtitle mx-auto">{dek}</p>
                 </div>
             </div>
-            <div class="row mt-5">
+            : <nbsp/> }
+            <div class="row">
             {nuts.map((nut, index) => (
               <div class="col-md-4">
                   <div class="services-box">

@@ -7,25 +7,43 @@ import Image from "../../components/image"
 import SEO from "../../components/seo"
 import Hero from "../../components/hero"
 import Features from "../../components/features"
+import Explainer from "../../components/explainer"
+import Plan from "../../components/plan"
+import FAQ from "../../components/faq"
+import CTA from "../../components/cta"
+import Footer from "../../components/footer"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
       headline={(<span><u>Unlimited</u> help from a Shopify developer</span>)}
-      dek="Focus on building your business. Send us unlimited tasks. One monthly subscription. Lightning fast turnaround"
+      dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
       cta="Try for free"/>
     <Features
-      headline={(<span>Everything you need to <span class="font-weight-bold">run your business</span></span>)}
-      dek="Lorem ipsum or some shit"
       nuts={[
         {
-          icon: "ti-settings",
-          heading: "Test",
-          text: "Some text"
+          icon: "ti-star",
+          heading: "US based experts",
+          text: "Work with an awesome team of Shopify experts."
+        },
+        {
+          icon: "ti-timer",
+          heading: "Blazing fast turnaround",
+          text: "Blitz through your list of site tweaks and updates."
+        },
+        {
+          icon: "ti-heart",
+          heading: "Help you can depend on",
+          text: "No HR issues, interviews, expensive agencies, or flakey contractors."
         }
       ]}
     />
+    <Explainer/>
+    <Plan/>
+    <FAQ/>
+    <CTA/>
+    <Footer/>
   </Layout>
 )
 
