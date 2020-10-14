@@ -5,9 +5,8 @@ const Hero = ({headline, dek, nuts}) => (
 
     <section class="section" id="services">
         <div class="container">
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-center text-center mt-5">
                 <div class="col-lg-12">
-                    <i class="ti-ruler-pencil title-icon text-muted"></i>
                     <h3 class="title">{headline}</h3>
                     <p class="text-muted mt-3 title-subtitle mx-auto">{dek}</p>
                 </div>

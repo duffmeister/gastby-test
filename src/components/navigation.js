@@ -5,9 +5,9 @@ import logo from '../images/alt-mc-logo-white@4x.png'
 const Navigation = () => (
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky">
       <div class="container">
-          <a class="navbar-brand" href="#">
+          <Link to="/" class="navbar-brand">
             <img src={logo} width="175"/>
-          </a>
+          </Link>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="ti-menu"></span>
           </button>

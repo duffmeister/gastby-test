@@ -483,6 +483,21 @@ a {
     font-size: 18px;
 }
 
+.plan-icon{
+  display: inline-block;
+  background: red;
+  width: 40px;
+  height: 40px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  border: 8px solid red;
+  border-radius: 400px;
+}
+.plan-icon i.text-custom {
+  color: white !important;
+  font-weight: bold;
+  font-style: normal;
+}
 
 /*********************
     5.FEATURES
@@ -496,6 +511,8 @@ a {
 .features-desc p {
     line-height: 1.8;
 }
+
+
 
 
 /*********************
