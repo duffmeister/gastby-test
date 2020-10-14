@@ -18,7 +18,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={(<span>Get the time back you need to run your business</span>)}
+      headline={(<span>Get time back to focus on running your business.</span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
       cta="Try for free"/>
     <Features

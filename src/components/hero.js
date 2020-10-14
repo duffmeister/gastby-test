@@ -12,7 +12,12 @@ const Hero = ({headline, dek, cta, ctaLink}) => (
                         <div>
                             <h1 class="text-white home-title mb-0">{headline}</h1>
                             <p class="text-white-50 home-subtitle mt-4 mb-0">{dek}</p>
-                            <div class="mt-4">
+                            <ul class="text-white mt-4 list-unstyled">
+                              <li class="mb-2"><i class="ti-bar-chart mr-2"></i> Improve your conversion rates and performance</li>
+                              <li class="mb-2"><i class="ti-check-box mr-2"></i> Fix bugs and design issues</li>
+                              <li><i class="ti-settings mr-2"></i> Intall apps an configure integrations</li>
+                            </ul>
+                            <div class="mt-5">
                                 <a href="{ctaLink}" class="btn btn-custom">{cta}</a>
                             </div>
                         </div>

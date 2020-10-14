@@ -16,8 +16,6 @@ import "./style/globing.css"
 import "./style/default.colors.css"
 import "./style/themify-icons.css"
 
-
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
