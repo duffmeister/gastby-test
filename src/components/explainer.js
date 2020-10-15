@@ -20,7 +20,7 @@ const Explainer = ({headline, dek, icon, sections}) => (
           <div class="row mt-5 vertical-content">
               <div class="col-lg-6 mt-2">
                   <div>
-                      <img src={section.image} class="img-fluid mx-auto d-block"/>
+                      <img src={section.image} alt="" class="img-fluid mx-auto d-block"/>
                   </div>
               </div>
               <div class="col-lg-5 offset-lg-1 mt-2">
@@ -32,9 +32,14 @@ const Explainer = ({headline, dek, icon, sections}) => (
           </div>
         ))}
     </div>
-</section>
-
-
+  </section>
 )
+
+Explainer.propTypes = {
+  headline: PropTypes.string,
+  dek: PropTypes.string,
+  icon: PropTypes.string,
+  sections: PropTypes.array
+}
 
 export default Explainer

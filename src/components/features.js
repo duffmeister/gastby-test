@@ -33,7 +33,7 @@ const Hero = ({headline, dek, nuts, logo}) => (
             { !!logo ?
               <div class="row justify-content-center text-center mt-5 mb-5">
                 <div class="col-sm">
-                  <img src={logo} width="200"/>
+                  <img src={logo} alt="Shopify partner logo" width="200"/>
                 </div>
               </div>
             : <></> }

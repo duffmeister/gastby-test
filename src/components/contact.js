@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 const Contact = () => (
 
@@ -7,8 +6,8 @@ const Contact = () => (
       <div class="container">
           <div class="row justify-content-center text-center">
               <div class="col-lg-12">
-                  <i class="ti-headphone-alt title-icon text-muted"></i>
-                  <h3 class="title">Get In <span class="font-weight-bold">Touch</span></h3>
+                  <i class="ti-email title-icon text-muted"></i>
+                  <h2>Get In <span class="font-weight-bold">Touch</span></h2>
                   <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
               </div>
           </div>
