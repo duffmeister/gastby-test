@@ -14,7 +14,7 @@ const Hero = ({headline, dek, nuts}) => (
                     <p class="text-muted mt-3 title-subtitle mx-auto">{dek}</p>
                 </div>
             </div>
-            : <nbsp/> }
+            : <></> }
             <div class="row">
             {nuts.map((nut, index) => (
               <div class="col-md-4">

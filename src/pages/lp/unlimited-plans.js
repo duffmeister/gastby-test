@@ -11,7 +11,6 @@ import Explainer from "../../components/explainer"
 import Plan from "../../components/plan"
 import FAQ from "../../components/faq"
 import CTA from "../../components/cta"
-import Footer from "../../components/footer"
 
 const IndexPage = () => (
   <Layout>
@@ -43,7 +42,6 @@ const IndexPage = () => (
     <Plan/>
     <CTA/>
     <FAQ/>
-    <Footer/>
   </Layout>
 )
 

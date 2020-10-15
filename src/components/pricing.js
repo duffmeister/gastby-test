@@ -6,7 +6,7 @@ const Pricing = () => (
           <div class="container">
               <div class="row justify-content-center text-center">
                   <div class="col-lg-12">
-                      <i class="ti-package title-icon text-muted"></i>
+                      <i class="ti-money title-icon text-muted"></i>
                       <h3 class="title">Our <span class="font-weight-bold">Pricing</span></h3>
                       <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
                   </div>
@@ -14,8 +14,9 @@ const Pricing = () => (
               <div class="row mt-5">
                   <div class="col-lg-4">
                       <div class="bg-white price-box text-center mt-3">
+                          <h4>Grow</h4>
                           <div class="plan-price font-weight-bold">
-                              <h1 class="mb-0 font-weight-bold">$29</h1>
+                              <h1 class="mb-0 font-weight-bold">$299</h1>
                               <p class="mb-0">Per Month</p>
                           </div>
                           <div class="plan-features text-muted mt-5 mb-5">
@@ -26,14 +27,15 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom btn-round">Join Now</a>
+                              <a href="#" class="btn btn-custom">Join Now</a>
                           </div>
                       </div>
                   </div>
                   <div class="col-lg-4">
                       <div class="bg-white price-box active text-center mt-3">
+                          <h4>Scale</h4>
                           <div class="plan-price font-weight-bold">
-                              <h1 class="mb-0 font-weight-bold">$59</h1>
+                              <h1 class="mb-0 font-weight-bold">$699</h1>
                               <p class="mb-0">Per Month</p>
                           </div>
                           <div class="plan-features text-muted mt-5 mb-5">
@@ -44,14 +46,15 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom btn-round">Join Now</a>
+                              <a href="#" class="btn btn-custom">Join Now</a>
                           </div>
                       </div>
                   </div>
                   <div class="col-lg-4">
                       <div class="bg-white price-box text-center mt-3">
+                          <h4>Enterprise</h4>
                           <div class="plan-price font-weight-bold">
-                              <h1 class="mb-0 font-weight-bold">$79</h1>
+                              <h1 class="mb-0 font-weight-bold">Call</h1>
                               <p class=" mb-0">Per Month</p>
                           </div>
                           <div class="plan-features text-muted mt-5 mb-5">
@@ -62,7 +65,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom btn-round">Join Now</a>
+                              <a href="#" class="btn btn-custom">Join Now</a>
                           </div>
                       </div>
                   </div>

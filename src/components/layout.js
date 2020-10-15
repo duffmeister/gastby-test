@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Navigation from "./navigation"
+import Footer from "./footer"
 import "./style/bootstrap.min.css"
 import "./style/globing.css"
 import "./style/default.colors.css"
@@ -31,13 +32,7 @@ const Layout = ({ children }) => {
     <>
       <Navigation/>
       <main>{children}</main>
-      <footer style={{
-        marginTop: `2rem`
-      }}>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer/>
     </>
   )
 }

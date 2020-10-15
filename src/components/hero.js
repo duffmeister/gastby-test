@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Hero = ({headline, dek, cta, ctaLink}) => (
+const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
+
 
   <section class="section bg-home" id="home">
     <div class="home-center">
@@ -12,18 +13,26 @@ const Hero = ({headline, dek, cta, ctaLink}) => (
                         <div>
                             <h1 class="text-white home-title mb-0">{headline}</h1>
                             <p class="text-white-50 home-subtitle mt-4 mb-0">{dek}</p>
-                            <ul class="text-white mt-4 list-unstyled">
-                              <li class="mb-2"><i class="ti-bar-chart mr-2"></i> Improve your conversion rates and performance</li>
-                              <li class="mb-2"><i class="ti-check-box mr-2"></i> Fix bugs and design issues</li>
-                              <li><i class="ti-settings mr-2"></i> Intall apps an configure integrations</li>
-                            </ul>
+                            { bullets.length > 0 ?
+                              <ul class="text-white mt-4 list-unstyled">
+                                {bullets.map((bullet, index) => (
+                                  <li class="mb-2">
+                                    <i class={`${bullet.icon} mr-2`}></i> {bullet.text}
+                                  </li>
+                                ))}
+                              </ul>
+                            : <></> }
+                            { cta != "" ?
                             <div class="mt-5">
                                 <a href="{ctaLink}" class="btn btn-custom">{cta}</a>
                             </div>
+                            : <></> }
                         </div>
                     </div>
                     <div class="col-lg-5 mt-3">
-                        
+                      { image != "" ?
+                          <img src={image}/>
+                      : <></>}
                     </div>
                 </div>
             </div>
@@ -35,15 +44,19 @@ const Hero = ({headline, dek, cta, ctaLink}) => (
 Hero.propTypes = {
   headline: PropTypes.string.isRequired,
   dek: PropTypes.string.isRequired,
-  cta: PropTypes.string.isRequired,
-  ctaLink: PropTypes.string
+  image: PropTypes.object,
+  cta: PropTypes.string,
+  ctaLink: PropTypes.string,
+  bullets: PropTypes.array
 }
 
 Hero.defaultProps = {
   headline: ``,
   dek: ``,
-  cta: `Read More`,
-  ctaLink: `#`
+  image: ``,
+  cta: ``,
+  ctaLink: `#`,
+  bullets: []
 }
 
 export default Hero

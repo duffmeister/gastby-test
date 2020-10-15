@@ -5,12 +5,6 @@ const Explainer = ({headline, content, image, orientation}) => (
 
   <section class="section bg-light" id="features">
     <div class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-12 mt-5">
-                <h3 class="title">Crush your <span class="font-weight-bold">Shopify</span> todo list</h3>
-                <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
-            </div>
-        </div>
         <div class="row mt-5 vertical-content">
             <div class="col-lg-6 mt-2">
                 <div>

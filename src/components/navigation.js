@@ -15,7 +15,7 @@ const Navigation = () => (
           <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="#pricing">Pricing</a>
+                    <Link to="/pricing" class="nav-link" activeClassName="nav-link active">Pricing</Link>
                   </li>
                   <li class="nav-item">
                     <Link to="/about" class="nav-link" activeClassName="nav-link active">About Us</Link>

@@ -7,8 +7,9 @@ const Plan = () => (
     <div class="container-sm">
         <div class="row justify-content-center text-center">
             <div class="col-lg-12">
-                <h3 class="title">Get started <span class="font-weight-bold">today</span></h3>
-                <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
+                <i class="ti-map-alt title-icon text-muted"></i>
+                <h3 class="title">How it <span class="font-weight-bold">works</span></h3>
+                <p class="text-muted mt-3 title-subtitle mx-auto">We'll quick become you trusted partner.</p>
             </div>
         </div>
         <div class="row mt-5 vertical-content">
@@ -59,6 +60,16 @@ const Plan = () => (
                   <p class="text-muted mt-3">Focus on growing your business and keeping your customers happy.</p>
               </div>
           </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mt-5">
+                <div class="text-center">
+                    <h3 class="mb-4">Get started now</h3>
+                    <div class="">
+                        <a href="#" class="btn btn-round btn-custom">Try a free task</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </section>
