@@ -16,13 +16,15 @@
 .main-slider .flex-control-paging li a.flex-active,
 .team-social li a:hover,
 .contact-border,
-.back-to-top:hover {
+.back-to-top:hover,
+.plan-icon {
     background-color: #37b8df;
 }
 
 .btn-custom,
 .registration-input-box:focus,
-.form-control:focus,.team-social li a:hover  {
+.form-control:focus,.team-social li a:hover,
+.plan-icon  {
     border-color: #37b8df ;
 }
 

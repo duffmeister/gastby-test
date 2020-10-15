@@ -8,7 +8,7 @@ const FAQ = () => (
               <div class="row justify-content-center text-center">
                   <div class="col-lg-12">
                       <i class="ti-comments title-icon text-muted"></i>
-                      <h3 class="title">Frequently asked <span class="font-weight-bold">questions</span></h3>
+                      <h2>Frequently asked <span class="font-weight-bold">questions</span></h2>
                   </div>
               </div>
               <div class="row mt-5">
