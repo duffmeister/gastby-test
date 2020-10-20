@@ -33,7 +33,8 @@ const Landing = ({headline, dek, nuts, cta}) => (
                         <div class="col-lg-4 mt-3">
                             <div class="home-registration-form mx-auto bg-white p-4">
                                 <h5 class="form-title mb-4 text-center font-weight-bold">{cta}</h5>
-                                <form name="npd-lead" class="registration-form" action="/success-check-email" data-netlify="true" method="POST">
+                                <form name="New Product Development - Performance" class="registration-form" action="/success-check-email" data-netlify="true" method="POST">
+                                    <input name="form-name" value="New Product Development - Performance" type="hidden" />
                                     <label for="name" class="text-muted">Your Name</label>
                                     <input type="text" id="name" name="name" class="form-control mb-2 registration-input-box"/>
                                     <label for="email" class="text-muted">Email</label>
