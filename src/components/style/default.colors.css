@@ -4,6 +4,18 @@
     File Description: Main CSS file of the template
 */
 
+.background-gradient-strong{
+  background: rgb(182,0,106);
+  background: linear-gradient(130deg, rgba(182,0,106,1) 0%, rgba(230,57,70,1) 100%);
+}
+
+.btn-cta{
+  background: rgb(182,0,106);
+  background: linear-gradient(130deg, rgba(182,0,106,1) 0%, rgba(230,57,70,1) 100%);
+  border: 0px;
+  text-transform: none;
+}
+
 .text-custom,
 .navbar-light .navbar-nav li a:hover,
 .navbar-light .navbar-nav li a:active,

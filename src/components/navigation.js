@@ -29,7 +29,7 @@ const Navigation = () => (
                   <li class="list-inline-item">
                       <Link to="https://mcco.zendesk.com/hc" class="nav-link" activeClassName="nav-link active">Sign In</Link>
                   </li>
-                  <li class="list-inline-item"><a href="#" class="btn btn-custom">Try for free</a></li>
+                  <li class="list-inline-item"><a href="#" class="btn btn-cta">Try for free</a></li>
                 </ul>
               </div>
           </div>

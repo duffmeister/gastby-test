@@ -8,7 +8,7 @@ const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
     <div class="home-center">
         <div class="home-desc-center">
             <div class="container">
-                <div class="row vertical-content">
+                <div class="row">
                     <div class="col-lg-7 mb-5">
                         <div>
                             <h1 class="text-white home-title mb-0">{headline}</h1>
@@ -24,7 +24,7 @@ const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
                             : <></> }
                             { cta != "" ?
                             <div class="mt-5 mb-3">
-                                <a href={ctaLink} class="btn btn-custom">{cta}</a>
+                                <a href={ctaLink} style={{fontSize:"1.2em"}} class="btn btn-lg btn-cta">{cta}</a>
                             </div>
                             : <></> }
                         </div>

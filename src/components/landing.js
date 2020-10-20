@@ -35,9 +35,9 @@ const Landing = ({headline, dek, nuts, cta}) => (
                                 <h5 class="form-title mb-4 text-center font-weight-bold">{cta}</h5>
                                 <form class="registration-form" data-netlify="true" method="POST">
                                     <label class="text-muted">First Name</label>
-                                    <input type="text" id="exampleInputName1" class="form-control mb-2 registration-input-box"/>
+                                    <input type="text" id="name" class="form-control mb-2 registration-input-box"/>
                                     <label class="text-muted">Email</label>
-                                    <input type="email" id="exampleInputEmail1" class="form-control mb-2 registration-input-box"/>
+                                    <input type="email" id="email" class="form-control mb-2 registration-input-box"/>
                                     <label class="text-muted">Store URL</label>
                                     <input type="url" id="url" class="form-control mb-2 registration-input-box"/>
                                     <button class="btn btn-custom w-100 mt-3 text-uppercase">Get In Touch</button>
