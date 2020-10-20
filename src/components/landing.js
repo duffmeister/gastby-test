@@ -9,7 +9,7 @@ const Landing = ({headline, dek, nuts, cta}) => (
             <div className="home-desc-center">
                 <div className="container">
                     <div className="row vertical-content">
-                        <div className="col-lg-7">
+                        <div className="col-lg-7" >
                             <div>
                                 <h1 className="text-white home-title mb-0">{headline}</h1>
                                 <p className="text-white-60 home-subtitle mt-4 mb-0">{dek}</p>
@@ -31,9 +31,11 @@ const Landing = ({headline, dek, nuts, cta}) => (
                             </div>
                         </div>
                         <div className="col-lg-1"></div>
-                        <div className="col-lg-4 mt-3">
+                        <div className="col-lg-4 mt-5">
+                          <a style={{position: "relative", top: "-150px"}} id="after-submit"/>
                           <ContactForm
                             cta={cta}
+                            scrollBack="#after-submit"
                           />
                         </div>
                     </div>
