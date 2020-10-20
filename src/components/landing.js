@@ -11,7 +11,7 @@ const Landing = ({headline, dek, nuts, cta}) => (
                         <div class="col-lg-7">
                             <div>
                                 <h1 class="text-white home-title mb-0">{headline}</h1>
-                                <p class="text-muted home-subtitle mt-4 mb-0">{dek}</p>
+                                <p class="text-white-60 home-subtitle mt-4 mb-0">{dek}</p>
                                 <div class="container-fluid mt-5">
                                   <div class="row">
                                   {nuts.map((nut, index) => (
@@ -21,7 +21,7 @@ const Landing = ({headline, dek, nuts, cta}) => (
                                       </div>
                                       <div class="mt-3">
                                           <h5 class="services-title font-weight-bold mb-3">{nut.heading}</h5>
-                                          <p class="services-subtitle text-muted">{nut.text}</p>
+                                          <p class="services-subtitle text-white-60">{nut.text}</p>
                                       </div>
                                     </div>
                                   ))}
@@ -40,7 +40,7 @@ const Landing = ({headline, dek, nuts, cta}) => (
                                     <input type="email" id="email" name="email" class="form-control mb-2 registration-input-box"/>
                                     <label for="url" class="text-muted">Store URL</label>
                                     <input type="url" id="url"name="url" class="form-control mb-2 registration-input-box"/>
-                                    <button class="btn btn-custom w-100 mt-3 text-uppercase">Get In Touch</button>
+                                    <button type="submit" class="btn btn-cta w-100 mt-3 text-uppercase">Get In Touch</button>
                                 </form>
                             </div>
                         </div>

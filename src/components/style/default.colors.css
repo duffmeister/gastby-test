@@ -52,3 +52,7 @@
     border-color: #30a0c1;
     background-color: #30a0c1;
 }
+
+.text-white-60{
+  color:rgba(255,255,255,.60)
+}
