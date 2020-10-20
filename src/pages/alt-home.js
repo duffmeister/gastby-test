@@ -17,13 +17,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={(<span>World class managed services for <u>Shopify</u> stores.</span>)}
+      headline={(<span>World class managed services for your <u>Shopify</u> store.</span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
       cta="Try for free"
       bullets={[
-        {icon: "ti-bar-chart", text: "Improve your conversion rates and performance"},
-        {icon: "ti-check-box", text: "Fix bugs and design issues"},
-        {icon: "ti-settings", text: "Intall apps an configure integration"}
+        {icon: "ti-bar-chart", text: "Improve your store operations"},
+        {icon: "ti-check-box", text: "Cut your expenses, gain piece of mind"},
+        {icon: "ti-settings", text: "Access reliable help when you need it"}
       ]}/>
     <Features
       logo={partnerLogo}

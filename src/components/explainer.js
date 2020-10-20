@@ -17,7 +17,7 @@ const Explainer = ({headline, dek, icon, sections}) => (
     : <></> }
     <div class="container flipflop">
         {sections.map((section, index)=>(
-          <div class="row mt-5 vertical-content">
+          <div  key={index} class="row mt-5 vertical-content">
               <div class="col-lg-6 mt-2">
                   <div>
                       <img src={section.image} alt="" class="img-fluid mx-auto d-block"/>

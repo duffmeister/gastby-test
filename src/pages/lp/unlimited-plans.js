@@ -9,10 +9,13 @@ import Hero from "../../components/hero"
 import Features from "../../components/features"
 import Explainer from "../../components/explainer"
 import Plan from "../../components/plan"
+import SimpleLogos from "../../components/simplelogos"
 import FAQ from "../../components/faq"
 import CTA from "../../components/cta"
 
 import partnerLogo from "../../images/shopify-partner-logo.png"
+import partnerLogos from "../../images/partner-logos@4x.png"
+import hero from "../../images/hero-test@4x.png"
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +23,7 @@ const IndexPage = () => (
     <Hero
       headline={(<span><u>Unlimited</u> Shopify developer help </span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
+      image={hero}
       cta="Try for free"
       bullets={[
         {icon: "ti-bar-chart", text: "Improve your conversion rates and performance"},
@@ -45,6 +49,9 @@ const IndexPage = () => (
           text: "Work with an awesome team of top Shopify experts."
         }
       ]}
+    />
+    <SimpleLogos
+      logos={partnerLogos}
     />
     <Explainer
       sections={[

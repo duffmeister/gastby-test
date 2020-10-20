@@ -16,7 +16,7 @@ const Cards = ({headline, dek, icon, cards}) => (
             : <></> }
             <div class="row mt-5 align-content-stretch">
               {cards.map((card, index) => (
-                <div class={card.class === "large" ? `col-lg-6` : `col-lg-3`}>
+                <div key={index} class={card.class === "large" ? `col-lg-6` : `col-lg-3`}>
                     <div class="bg-white team-box mt-3 pl-4 pr-4 pt-4 pb-4">
                         <i class={`${card.icon} title-icon text-muted`}></i>
                         <div class="team-name">

@@ -271,7 +271,8 @@ a {
 **********************/
 
 .bg-home {
-    background-image: url('../../images/cartographer.png');
+    background: #1D3557;
+    /**background-image: url('../../images/cartographer.png');**/
     position: relative;
     padding: 190px 0;
 }
@@ -480,6 +481,10 @@ h1 u {
 /*********************
     4.SERVICES-BOX
 **********************/
+
+.inverted {
+  background: #457B9D;
+}
 
 .services-box {
     padding: 30px;

@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Hero = ({headline, dek, nuts, logo}) => (
+const Hero = ({headline, dek, nuts}) => (
 
-    <section class="section" id="services">
+    <section class="section inverted" id="nuts">
         <div class="container">
             { !!headline  ?
             <div class="row justify-content-center text-center mt-5 mb-5">
@@ -16,25 +16,18 @@ const Hero = ({headline, dek, nuts, logo}) => (
             { !!nuts ?
               <div class="row">
               {nuts.map((nut, index) => (
-                <div class="col-md-4">
+                <div  key={index} class="col-md-4">
                     <div class="services-box">
-                        <div class="services-icon">
-                            <i class={`${nut.icon} text-custom`}></i>
+                        <div class="services-icon text-white">
+                            <i class={`${nut.icon} text-white`}></i>
                         </div>
                         <div class="mt-3">
-                            <h5 class="services-title font-weight-bold mb-3">{nut.heading}</h5>
-                            <p class="services-subtitle text-muted">{nut.text}</p>
+                            <h5 class="services-title text-white mb-3">{nut.heading}</h5>
+                            <p class="services-subtitle text-white-50">{nut.text}</p>
                         </div>
                     </div>
                 </div>
               ))}
-              </div>
-            : <></> }
-            { !!logo ?
-              <div class="row justify-content-center text-center mt-5 mb-5">
-                <div class="col-sm">
-                  <img src={logo} alt="Shopify partner logo" width="200"/>
-                </div>
               </div>
             : <></> }
         </div>

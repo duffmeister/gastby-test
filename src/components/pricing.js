@@ -2,12 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const Pricing = () => (
-  <section class="section bg-light" id="pricing">
+  <section class="section bg-light mt-5" id="pricing">
           <div class="container">
               <div class="row justify-content-center text-center">
                   <div class="col-lg-12">
                       <i class="ti-money title-icon text-muted"></i>
-                      <h3 class="title">Our <span class="font-weight-bold">Pricing</span></h3>
+                      <h2><span class="font-weight-bold">Unlimited</span> monthly plans</h2>
                       <p class="text-muted mt-3 title-subtitle mx-auto">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
                   </div>
               </div>
@@ -46,7 +46,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom">Join Now</a>
+                              <a href="#" class="btn btn-custom">Try Now</a>
                           </div>
                       </div>
                   </div>
@@ -65,7 +65,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom">Join Now</a>
+                              <a href="#" class="btn btn-custom">Get in touch</a>
                           </div>
                       </div>
                   </div>

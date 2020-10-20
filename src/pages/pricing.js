@@ -16,9 +16,6 @@ import heroImage from "../images/gatsby-astronaut.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero
-      headline={(<span>Choose the plan that's right for you.</span>)}
-      dek=""/>
     <Pricing/>
     <FAQ/>
   </Layout>

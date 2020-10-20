@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from '../images/alt-mc-logo-white@4x.png'
+import logo from '../images/new-logo-white@4x.png'
 
 const Navigation = () => (
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky">
