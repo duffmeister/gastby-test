@@ -100,6 +100,10 @@ a {
     display: block;
 }
 
+.transition-all{
+  transition: all 0.5s;
+}
+
 .btn {
     padding: 12px 34px;
     font-size: 12px;
