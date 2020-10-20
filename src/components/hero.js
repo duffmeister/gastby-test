@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Image from "./image"
 
 const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
 
@@ -31,7 +32,8 @@ const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
                     </div>
                     <div class="col-lg-5 mt-0 pt-0">
                       { image != "" ?
-                          <img style={{width: "100%"}} src={image}/>
+                          <Image/>
+                          
                       : <></>}
                     </div>
                 </div>
