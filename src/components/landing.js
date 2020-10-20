@@ -33,7 +33,7 @@ const Landing = ({headline, dek, nuts, cta}) => (
                         <div class="col-lg-4 mt-3">
                             <div class="home-registration-form mx-auto bg-white p-4">
                                 <h5 class="form-title mb-4 text-center font-weight-bold">{cta}</h5>
-                                <form class="registration-form" data-netlify="true" method="POST">
+                                <form class="registration-form" action="/success-check-email" data-netlify="true" method="POST">
                                     <label class="text-muted">First Name</label>
                                     <input type="text" id="name" class="form-control mb-2 registration-input-box"/>
                                     <label class="text-muted">Email</label>
