@@ -40,7 +40,7 @@ const Tasks = ({headline, dek, icon, tasks}) => (
             </div>
             <div class="row justify-content-center text-center mt-5 mb-5">
                 <div class="col-lg-6">
-                    <h4>Try it out, create your own task.</h4>
+                    <h4>Create your own task.</h4>
                     <p>Try out the Unlimted service risk free, create a free
                     task and experience first hand what we can do together.</p>
                     <button class="mt-3 btn btn-cta">Try for free</button>

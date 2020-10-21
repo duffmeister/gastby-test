@@ -13,7 +13,7 @@ import SimpleLogos from "../components/simplelogos"
 
 import partnerLogo from "../images/shopify-partner-logo.png"
 import partnerLogos from "../images/partner-logos@4x.png"
-import hero from "../images/hero-test@4x.png"
+import hero from "../images/enterprise-hero@4x.png"
 
 const IndexPage = () => (
   <Layout>
@@ -52,6 +52,17 @@ const IndexPage = () => (
     <SimpleLogos
       logos={partnerLogos}
     />
+    <Explainer
+      sections={[
+        {heading:"Talent network", text:"largest e-commerce brands in the world, x country launches, 15 Black Fridays."},
+        {heading:"Smooth operations", text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc."},
+        {heading:"Ownership and accountability", text:"You'll work with developers that can be human, work fast, and are easy to work with. Most of all you'll work with people that are willing to be invested in you and your success."},
+        {heading:"Project nirvana", text:"100% agile trained, with 6 large scale agile transformations under our belt, you’ll always know what’s being worked on and predictable delivery, simple upwards reporting of status."}
+
+
+      ]}
+    />
+
 
     <Explainer
       sections={[

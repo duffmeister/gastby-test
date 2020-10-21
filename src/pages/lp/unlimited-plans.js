@@ -18,7 +18,7 @@ import CTA from "../../components/cta"
 
 import partnerLogo from "../../images/shopify-partner-logo.png"
 import partnerLogos from "../../images/partner-logos@4x.png"
-import hero from "../../images/hero-test@4x.png"
+import hero from "../../images/unlimited-hero@4x.png"
 
 const IndexPage = () => (
   <Layout>
@@ -72,6 +72,7 @@ const IndexPage = () => (
         {heading:'Do your thing', text:'Focus on growing your business and keeping your customers happy.'}
       ]}
     />
+    <Testimonials/>
     <Tasks
       icon="ti-check-box"
       headline="Check out what you can do"
@@ -87,7 +88,6 @@ const IndexPage = () => (
         {heading:'Solve the issues with google shopping integration', type:'support', time:'3 days', icon:'ti-support', csat:9},
       ]}
     />
-    <Testimonials/>
     <FAQ/>
     <CTA/>
   </Layout>
