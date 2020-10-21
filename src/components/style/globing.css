@@ -795,8 +795,8 @@ textarea.form-control {
         line-height: 1.2;
     }
     .user-review {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 26px;
+        line-height: 40px;
     }
     .team-box.active {
         transform: scale(1.0);

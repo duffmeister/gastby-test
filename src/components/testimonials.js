@@ -4,7 +4,7 @@ const Testimonials = () => (
     <section class="section bg-client" id="testi">
         <div class="container">
             <div class="row justify-content-center mt-5 mb-5">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-5">
                     <div class="text-center w-75 mx-auto">
                         <div class="testi-icon text-white">
                             <i class="ti-quote-left"></i>
@@ -22,7 +22,7 @@ const Testimonials = () => (
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-5">
                     <div class="text-center w-75 mx-auto">
                         <div class="testi-icon text-white">
                             <i class="ti-quote-left"></i>

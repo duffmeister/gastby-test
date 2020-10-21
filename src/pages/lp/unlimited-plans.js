@@ -49,7 +49,7 @@ const IndexPage = () => (
         {
           icon: "ti-star",
           heading: "All star Shopify experts",
-          text: "100% of out team are experts at Shopify and many run thier own stores."
+          text: "100% of our team are experts at Shopify and eveyone runs thier own store too."
         }
       ]}
     />
@@ -77,14 +77,14 @@ const IndexPage = () => (
       headline="Check out what you can do"
       dek="Check out these recently completed tasks for happy store owners"
       tasks={[
+        {heading:'Add and style gifting options to the checkout', type:'support', time:'2 days', icon:'ti-support', csat:9},
         {heading:'Add description text to the collection pages', type:'support', icon:'ti-support', time:'1 days', csat:10},
-        {heading:'Investigate why sales spiked on Friday', type:'report', icon:'ti-write', time:'1 days', csat:10},
-        {heading:'Fix spacing below the image carousel', type:'support', icon:'ti-support', time:'1 days', csat:9},
         {heading:'Add zoomable images to the theme', type:'support', icon:'ti-support',time:'3 days', csat:8},
         {heading:'Look into lighthouse performance score', type:'investigate', icon:'ti-light-bulb', time:'2 days', csat:9},
-        {heading:'Getting an error on some product pages', type:'support', time:'1 days', icon:'ti-support', csat:10},
-        {heading:'Add and style gifting options to the checkout', type:'support', time:'2 days', icon:'ti-support', csat:9},
-        {heading:'Fix the issues with google shopping integration', type:'support', time:'3 days', icon:'ti-support', csat:9},
+        {heading:'Investigate why sales spiked on Friday', type:'report', icon:'ti-write', time:'1 days', csat:10},
+        {heading:'Fix spacing below the image carousel', type:'support', icon:'ti-support', time:'1 days', csat:9},
+        {heading:'Fix an error with in the theme', type:'support', time:'1 days', icon:'ti-support', csat:10},
+        {heading:'Solve the issues with google shopping integration', type:'support', time:'3 days', icon:'ti-support', csat:9},
       ]}
     />
     <Testimonials/>
