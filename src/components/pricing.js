@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
+import {Link} from "gatsby"
 
 const Pricing = () => (
-  <section class="section bg-light mt-5" id="pricing">
+  <section class="section bg-light mt-0" id="pricing">
           <div class="container">
               <div class="row justify-content-center text-center">
                   <div class="col-lg-12">
@@ -27,7 +28,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom">Join Now</a>
+                              <a href="#" class="btn btn-cta">Try Now</a>
                           </div>
                       </div>
                   </div>
@@ -46,7 +47,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom">Try Now</a>
+                              <a href="#" class="btn btn-cta">Try Now</a>
                           </div>
                       </div>
                   </div>
@@ -65,7 +66,7 @@ const Pricing = () => (
                               <p class="mb-0">No Hidden Fees</p>
                           </div>
                           <div>
-                              <a href="#" class="btn btn-custom">Get in touch</a>
+                            <Link to="/enterprise" className="btn btn-custom">Find out more</Link>
                           </div>
                       </div>
                   </div>

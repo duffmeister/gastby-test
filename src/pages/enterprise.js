@@ -19,7 +19,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={(<span><u>Unlimited</u> Shopify technical help </span>)}
+      headline={(<span>A <u>trusted</u> technical partner for your Shopify store</span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
       image={hero}
       cta="Find out more"

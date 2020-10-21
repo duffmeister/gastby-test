@@ -11,7 +11,8 @@ import Explainer from "../../components/explainer"
 import Plan from "../../components/plan"
 import SimpleLogos from "../../components/simplelogos"
 import FAQ from "../../components/faq"
-import CTA from "../../components/cta"
+import Pricing from "../../components/pricing"
+import Tasks from "../../components/tasks"
 
 import partnerLogo from "../../images/shopify-partner-logo.png"
 import partnerLogos from "../../images/partner-logos@4x.png"
@@ -21,7 +22,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={(<span><u>Unlimited</u> Shopify developer help </span>)}
+      headline={(<span><u>Unlimited</u> Shopify technical help </span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
       image={hero}
       cta="Try for free"
@@ -62,12 +63,22 @@ const IndexPage = () => (
     />
     <Plan
       headline="How it works"
+      icon="ti-map-alt"
       steps={[
         {heading:'Create your tasks', text:'Send your todo list, wish list, and any ad hoc requests as they come.'},
         {heading:'Work with an expert', text:'Watch your task list disappear with real time updates on progress.'},
         {heading:'Do your thing', text:'Focus on growing your business and keeping your customers happy.'}
       ]}
     />
+    <Tasks
+      icon="ti-check-box"
+      headline="Check out what you can do"
+      dek="Check out these recently completed tasks for happy store owners"
+      tasks={[
+        {heading:'Do a technical site review', time:'2 days', text:'Take a look at the new home page and make sure everything is in order'}
+      ]}
+    />
+    <Pricing/>
     <FAQ/>
   </Layout>
 )

@@ -7,7 +7,7 @@ const Plan = ({headline, dek, icon, steps}) => (
 
         { !!headline ?
         <div class="container-sm">
-          <div class="row justify-content-center text-center mt-5 mb-5">
+          <div class="row justify-content-center text-center mb-5">
               <div class="col-lg-12">
                   <i class={`${icon} title-icon text-muted`}></i>
                   <h2>{headline}</h2>

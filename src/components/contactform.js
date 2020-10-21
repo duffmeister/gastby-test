@@ -51,7 +51,7 @@ class ContactForm extends React.Component {
             <label htmlFor="email" className="text-muted">Email</label>
             <input ref="email" type="email" id="email" name="email" className="form-control mb-2 registration-input-box"/>
             <label htmlFor="url" className="text-muted">Store URL</label>
-            <input ref="site" type="url" id="url"name="url" className="form-control mb-2 registration-input-box"/>
+            <input ref="url" type="url" id="url" name="url" className="form-control mb-2 registration-input-box"/>
             <a href={this.props.scrollBack} className="btn btn-cta w-100 mt-3 text-uppercase" onClick={event => this.handleSubmit(event)}>Get In Touch</a>
         </form>
       )
