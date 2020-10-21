@@ -19,17 +19,19 @@ const Tasks = ({headline, dek, icon, tasks}) => (
                 <div key={index} class={task.class === "large" ? `col-lg-6` : `col-lg-3`}>
                     <div class="bg-white team-box mt-3 pl-4 pr-4 pt-4 pb-4">
                         <div class="team-name">
+                            <p class="text-muted slug"><i class={`${task.icon}`}></i><span>{task.type}</span></p>
+
                             <h5 class="services-title font-weight-bold mb-3">{task.heading}</h5>
                             <p>{task.text}</p>
                             <p class="text-muted mb-0">Status: <span class="text-success">Complete</span></p>
                             <p class="text-muted mt-0">Completed in: {task.time}</p>
-                            <p class="testi-user-name text-center text-white mb-0 mt-4">- John Litts, Globing</p>
-                            <p class="text-muted">
+                            <p class="text-muted rating">
                                 <span class="ti-star text-warning"></span>
                                 <span class="ti-star text-warning"></span>
                                 <span class="ti-star text-warning"></span>
                                 <span class="ti-star text-warning"></span>
-                                <span class="ti-star"></span>
+                                <span class="ti-star text-warning"></span>
+                                <span class="csat">({task.csat}/10)</span>
                             </p>
                         </div>
                     </div>

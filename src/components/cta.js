@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const CTA = (heading, cta, ctaLink) => (
+const CTA = ({heading, cta, ctaLink}) => (
     <section class="section">
         <div class="container">
             <div class="row">

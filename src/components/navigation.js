@@ -14,21 +14,23 @@ const Navigation = () => (
 
           <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav mx-auto">
+
                   <li className="nav-item">
-                    <Link to="/faststart" className="nav-link" activeClassName="nav-link active">FastStart</Link>
+                    <Link to="/lp/unlimited-plans" className="nav-link" activeClassName="nav-link active">Unlimited</Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/enterprise" className="nav-link" activeClassName="nav-link active">Enterprise</Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/lp/unlimited-plans" className="nav-link" activeClassName="nav-link active">Unlimited</Link>
+                    <Link to="/faststart" className="nav-link" activeClassName="nav-link active">FastStart</Link>
                   </li>
                   <li className="nav-item">
+                    <Link to="/pricing" className="nav-link" activeClassName="nav-link active">Pricing</Link>
+                  </li>
+                  {/*<li className="nav-item">
                     <Link to="/about" className="nav-link" activeClassName="nav-link active">About Us</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/careers" className="nav-link" activeClassName="nav-link active">Careers</Link>
-                  </li>
+                  </li>*/}
+
               </ul>
               <div>
                 <ul className="text-right list-unstyled list-inline mb-0 nav-social">

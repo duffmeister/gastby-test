@@ -13,6 +13,8 @@ import SimpleLogos from "../../components/simplelogos"
 import FAQ from "../../components/faq"
 import Pricing from "../../components/pricing"
 import Tasks from "../../components/tasks"
+import Testimonials from "../../components/testimonials"
+import CTA from "../../components/cta"
 
 import partnerLogo from "../../images/shopify-partner-logo.png"
 import partnerLogos from "../../images/partner-logos@4x.png"
@@ -37,17 +39,17 @@ const IndexPage = () => (
         {
           icon: "ti-timer",
           heading: "Blazing fast turnaround",
-          text: "Blitz through your list of site tweaks and updates."
+          text: "100% 1 day response rate helps you blitz through your todo list."
         },
         {
           icon: "ti-heart",
           heading: "Help you can depend on",
-          text: "No HR issues, interviews, expensive agencies, or flakey contractors."
+          text: "0 HR issues, 0 interviews, 0 expensive agencies, 0 flakey contractors."
         },
         {
           icon: "ti-star",
           heading: "All star Shopify experts",
-          text: "Work with an awesome team of top Shopify experts."
+          text: "100% of out team are experts at Shopify and many run thier own stores."
         }
       ]}
     />
@@ -75,11 +77,19 @@ const IndexPage = () => (
       headline="Check out what you can do"
       dek="Check out these recently completed tasks for happy store owners"
       tasks={[
-        {heading:'Do a technical site review', time:'2 days', text:'Take a look at the new home page and make sure everything is in order'}
+        {heading:'Add description text to the collection pages', type:'support', icon:'ti-support', time:'1 days', csat:10},
+        {heading:'Investigate why sales spiked on Friday', type:'report', icon:'ti-write', time:'1 days', csat:10},
+        {heading:'Fix spacing below the image carousel', type:'support', icon:'ti-support', time:'1 days', csat:9},
+        {heading:'Add zoomable images to the theme', type:'support', icon:'ti-support',time:'3 days', csat:8},
+        {heading:'Look into lighthouse performance score', type:'investigate', icon:'ti-light-bulb', time:'2 days', csat:9},
+        {heading:'Getting an error on some product pages', type:'support', time:'1 days', icon:'ti-support', csat:10},
+        {heading:'Add and style gifting options to the checkout', type:'support', time:'2 days', icon:'ti-support', csat:9},
+        {heading:'Fix the issues with google shopping integration', type:'support', time:'3 days', icon:'ti-support', csat:9},
       ]}
     />
-    <Pricing/>
+    <Testimonials/>
     <FAQ/>
+    <CTA/>
   </Layout>
 )
 
