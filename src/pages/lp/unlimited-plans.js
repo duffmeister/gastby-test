@@ -29,6 +29,27 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    },
+    findProblemsImage: file(relativePath: { eq: "find-problems@4x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    greatJobImage: file(relativePath: { eq: "great-job@4x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    taskCompletedImage: file(relativePath: { eq: "task-completed@4x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
@@ -54,17 +75,17 @@ const UnlimitedPage = ({data}) => (
         {
           icon: "ti-timer",
           heading: "Blazing fast turnaround",
-          text: "100% 1 day response rate helps you blitz through your todo list."
+          text: "You can blitz through you todo list with 1 business day response rate 100% of the time."
         },
         {
           icon: "ti-heart",
           heading: "Help you can depend on",
-          text: "0 HR issues, 0 interviews, 0 expensive agencies, 0 flakey contractors."
+          text: "You don't need to worry about HR issues, interviews, expensive agencies, or flakey contractors."
         },
         {
           icon: "ti-star",
-          heading: "All star Shopify experts",
-          text: "100% of our team are experts at Shopify and eveyone runs thier own store too."
+          heading: "Work with Shopify all stars",
+          text: "You'll love working with a team that really know's thier Shopify tech and how to make your store amazing."
         }
       ]}
     />
@@ -73,9 +94,21 @@ const UnlimitedPage = ({data}) => (
     />
     <Explainer
       sections={[
-        {heading:"Get more done", text:"You'll love working with our developers, they are some of the finest and brightest in the industry (they've worked at some of the largest brands too)."},
-        {heading:"Move fast", text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc."},
-        {heading:"Waste less time", text:"You'll work with developers that can be human, work fast, and are easy to work with. Most of all you'll work with people that are willing to be invested in you and your success."}
+        {
+          heading:"Get more done",
+          image: <Img fluid={data.findProblemsImage.childImageSharp.fluid} />,
+          text:"You'll work with developers that can be human, work fast, and are easy to work with. Most of all you'll work with people that are willing to be invested in you and your success. You know that feeling when you work with great people? You just move faster, spend less time discussing things everyone 'gets it'."
+        },
+        {
+          heading:"Move fast",
+          image: <Img fluid={data.taskCompletedImage.childImageSharp.fluid} />,
+          text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc. You'll love working with our developers, they are some of the finest and brightest in the industry (they've worked at some of the largest brands too)"
+        },
+        {
+          heading:"Waste less time",
+          image: <Img fluid={data.greatJobImage.childImageSharp.fluid} />,
+          text:"You know that feeling when you work with great people? You just move faster, spend less time discussing things everyone 'gets it'."
+        }
       ]}
     />
     <Plan
@@ -90,8 +123,8 @@ const UnlimitedPage = ({data}) => (
     <Testimonials/>
     <Tasks
       icon="ti-check-box"
-      headline="What can Unlimited do for you?"
-      dek="Check out these recently completed tasks for happy store owners"
+      headline="What can you get done?"
+      dek="Check out these recently completed tasks for happy store owners."
       tasks={[
         {heading:'Add and style gifting options to the checkout', type:'support', time:'2 days', icon:'ti-support', csat:9},
         {heading:'Add description text to the collection pages', type:'support', icon:'ti-support', time:'1 days', csat:10},
