@@ -10,18 +10,33 @@ import Features from "../components/features"
 import Cards from "../components/cards"
 import Explainer from "../components/explainer"
 import SimpleLogos from "../components/simplelogos"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 import partnerLogo from "../images/shopify-partner-logo.png"
 import partnerLogos from "../images/partner-logos@4x.png"
-import hero from "../images/enterprise-hero@4x.png"
 
-const IndexPage = () => (
+export const query = graphql`
+  query {
+    placeholderImage: file(relativePath: { eq: "enterprise-hero@4x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const EnterprisePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Hero
       headline={(<span>A <u>trusted</u> technical partner for your Shopify store</span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
-      image={hero}
+      hero={
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      }
       cta="Find out more"
       ctaLink="/lp/unlimited-plans"
       bullets={[
@@ -81,4 +96,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default EnterprisePage

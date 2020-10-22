@@ -2,8 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "./image"
 
-const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
-
+const Hero = ({headline, dek, hero, cta, ctaLink, bullets}) => (
 
   <section class="section bg-home" id="home">
     <div class="home-center">
@@ -31,10 +30,7 @@ const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
                         </div>
                     </div>
                     <div class="col-lg-5 mt-0 pt-0">
-                      { image != "" ?
-                          <Image/>
-                          
-                      : <></>}
+                      { hero != "" ? hero : <></>}
                     </div>
                 </div>
             </div>
@@ -46,7 +42,7 @@ const Hero = ({headline, dek, image, cta, ctaLink, bullets}) => (
 Hero.propTypes = {
   headline: PropTypes.string.isRequired,
   dek: PropTypes.string.isRequired,
-  image: PropTypes.object,
+  hero: PropTypes.object,
   cta: PropTypes.string,
   ctaLink: PropTypes.string,
   bullets: PropTypes.array
@@ -55,7 +51,6 @@ Hero.propTypes = {
 Hero.defaultProps = {
   headline: ``,
   dek: ``,
-  image: ``,
   cta: ``,
   ctaLink: `#`,
   bullets: []

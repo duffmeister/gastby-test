@@ -15,18 +15,33 @@ import Pricing from "../../components/pricing"
 import Tasks from "../../components/tasks"
 import Testimonials from "../../components/testimonials"
 import CTA from "../../components/cta"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image"
 
 import partnerLogo from "../../images/shopify-partner-logo.png"
 import partnerLogos from "../../images/partner-logos@4x.png"
-import hero from "../../images/unlimited-hero@4x.png"
 
-const IndexPage = () => (
+export const query = graphql`
+  query {
+    placeholderImage: file(relativePath: { eq: "unlimited-hero@4x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+const UnlimitedPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Hero
       headline={(<span><u>Unlimited</u> Shopify technical help </span>)}
       dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
-      image={hero}
+      hero={
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      }
       cta="Try for free"
       bullets={[
         {icon: "ti-bar-chart", text: "Improve your conversion rates and performance"},
@@ -75,7 +90,7 @@ const IndexPage = () => (
     <Testimonials/>
     <Tasks
       icon="ti-check-box"
-      headline="Check out what you can do"
+      headline="What can Unlimited do for you?"
       dek="Check out these recently completed tasks for happy store owners"
       tasks={[
         {heading:'Add and style gifting options to the checkout', type:'support', time:'2 days', icon:'ti-support', csat:9},
@@ -93,4 +108,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default UnlimitedPage
