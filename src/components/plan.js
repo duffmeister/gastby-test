@@ -17,25 +17,20 @@ const Plan = ({headline, dek, icon, steps}) => (
         </div>
         : <></> }
 
-      <div class="container-sm flipflop">
-        {steps.map((step, index) => (
-        <div class="row mt-5 vertical-content">
-          <div class="col-lg-4 mt-2">
-            <div>
-              <img src={step.image} alt="" class="img-fluid mx-auto d-block"/>
+      <div class="container-sm">
+        <div class="row mt-5 justify-content-md-center text-center">
+          {steps.map((step, index) => (
+            <div class="col-lg-3 mt-2 mb-5">
+                <div class="features-desc">
+                    <div class="plan-icon">
+                        <i class="text-custom">{index+1}</i>
+                    </div>
+                    <h5 class="mt-3 font-weight-bold">{step.heading}</h5>
+                    <p class="text-muted mt-3">{step.text}</p>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 mt-2">
-              <div class="features-desc">
-                  <div class="plan-icon">
-                      <i class="text-custom">{index+1}</i>
-                  </div>
-                  <h5 class="mt-3 font-weight-bold">{step.heading}</h5>
-                  <p class="text-muted mt-3">{step.text}</p>
-              </div>
-          </div>
+          ))}
         </div>
-        ))}
         <div class="row">
             <div class="col-lg-12 mt-5">
                 <div class="text-center">

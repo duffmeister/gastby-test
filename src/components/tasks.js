@@ -14,7 +14,7 @@ const Tasks = ({headline, dek, icon, tasks}) => (
                 </div>
             </div>
             : <></> }
-            <div class="row mt-5 align-content-stretch">
+            <div class="row mt-5 mb-5 pb-5 align-content-stretch">
               {tasks.map((task, index) => (
                 <div key={index} class={task.class === "large" ? `col-lg-6` : `col-lg-3`}>
                     <div class="bg-white team-box mt-3 pl-4 pr-4 pt-4 pb-4">
@@ -40,7 +40,7 @@ const Tasks = ({headline, dek, icon, tasks}) => (
             </div>
             <div class="row justify-content-center text-center mt-5 mb-5">
                 <div class="col-lg-6">
-                    <h4>Create your own task.</h4>
+                    <h4>Take us for a spin, create a free task....</h4>
                     <p>Try out the Unlimted service risk free, create a free
                     task and experience first hand what we can do together.</p>
                     <button class="mt-3 btn btn-cta">Try for free</button>

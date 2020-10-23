@@ -95,19 +95,19 @@ const UnlimitedPage = ({data}) => (
     <Explainer
       sections={[
         {
-          heading:"Get more done",
-          image: <Img fluid={data.findProblemsImage.childImageSharp.fluid} />,
-          text:"You'll work with developers that can be human, work fast, and are easy to work with. Most of all you'll work with people that are willing to be invested in you and your success. You know that feeling when you work with great people? You just move faster, spend less time discussing things everyone 'gets it'."
-        },
-        {
           heading:"Move fast",
-          image: <Img fluid={data.taskCompletedImage.childImageSharp.fluid} />,
-          text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc. You'll love working with our developers, they are some of the finest and brightest in the industry (they've worked at some of the largest brands too)"
+          image: <Img fluid={data.findProblemsImage.childImageSharp.fluid} />,
+          text:"Get the help you need, when and where you need it. Discover a team that is available via video, phone, chat, email, and sms for real time updates and questions."
         },
         {
-          heading:"Waste less time",
+          heading:"Get more done",
+          image: <Img fluid={data.taskCompletedImage.childImageSharp.fluid} />,
+          text:"Burn through your store's todo list in no time. You'll love working with an experienced team available on demand, you can spend less time talking about the work and more time watching it get done."
+        },
+        {
+          heading:"Deliver results",
           image: <Img fluid={data.greatJobImage.childImageSharp.fluid} />,
-          text:"You know that feeling when you work with great people? You just move faster, spend less time discussing things everyone 'gets it'."
+          text:"Achive your vision faster. Deliver real results for your store and get time to focus on the strategic initiatives you know will move the needle."
         }
       ]}
     />
@@ -137,7 +137,10 @@ const UnlimitedPage = ({data}) => (
       ]}
     />
     <FAQ/>
-    <CTA/>
+    <CTA
+      heading="Take us for a spin, create a free task..."
+      cta="Try for free"
+    />
   </Layout>
 )
 

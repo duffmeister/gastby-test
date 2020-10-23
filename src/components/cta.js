@@ -9,7 +9,7 @@ const CTA = ({heading, cta, ctaLink}) => (
                     <div class="text-center">
                         <h5 class="mb-4">{heading}</h5>
                         <div class="">
-                            <a href="{ctaLink}" class="btn btn-custom">{cta}</a>
+                            <a href="{ctaLink}" class="btn btn-cta" style={{fontSize:"1.2em"}}>{cta}</a>
                         </div>
                     </div>
                 </div>

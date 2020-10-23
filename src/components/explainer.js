@@ -18,12 +18,12 @@ const Explainer = ({headline, dek, icon, sections}) => (
     <div class="container flipflop">
         {sections.map((section, index)=>(
           <div  key={index} class="row mt-5 vertical-content">
-              <div class="col-lg-6 mt-2">
+              <div class="col-lg-6 mt-2 mb-5">
                   <div class="mx-3">
                     { !!section.image ? section.image : <></>}
                   </div>
               </div>
-              <div class="col-lg-5 offset-lg-1 mt-2">
+              <div class="col-lg-5 offset-lg-1 mt-2 mb-5">
                   <div class="features-desc">
                       <h2>{section.heading}</h2>
                       <p class="text-muted mt-3">{section.text}.</p>

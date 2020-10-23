@@ -10,6 +10,8 @@ import Features from "../components/features"
 import Cards from "../components/cards"
 import Explainer from "../components/explainer"
 import SimpleLogos from "../components/simplelogos"
+
+import Plan from "../components/plan"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
@@ -32,8 +34,8 @@ const EnterprisePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={(<span>A <u>trusted</u> technical partner for your Shopify store</span>)}
-      dek="Focus on building your business. Send us unlimited tasks. One monthly subscription."
+      headline={<span>We're the <u>trusted</u> technical partner for your Shopify store.</span>}
+      dek="Focus on building your business. Leave the tech to us."
       hero={
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       }
@@ -69,20 +71,34 @@ const EnterprisePage = ({data}) => (
     />
     <Explainer
       sections={[
-        {heading:"Talent network", text:"largest e-commerce brands in the world, x country launches, 15 Black Fridays."},
-        {heading:"Smooth operations", text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc."},
-        {heading:"Ownership and accountability", text:"You'll work with developers that can be human, work fast, and are easy to work with. Most of all you'll work with people that are willing to be invested in you and your success."},
-        {heading:"Project nirvana", text:"100% agile trained, with 6 large scale agile transformations under our belt, you’ll always know what’s being worked on and predictable delivery, simple upwards reporting of status."}
+        {
+          heading:"Get time to focus on the big stuff",
+          text:"Get the tactical work and vendor management noise off your plate and enjoy time back to focus on the strategic initiatives that impact your business."
+        },
+        {
+          heading:"Resolve issues before they impact customers.",
+          text:"Save hundreds of thousands of dollars in lost customers with Hawkeye our enterprise grade monitoring platform. Our seasoned on call team will be watching your site 24/7."
+        },
+        {
+          heading:"Always be one step ahead",
+          text:"With proactive status updates, enterprise SLAs and weekly checkins you’ll always know the status of hot issues, and be able to reliably make commitments to your stakeholders."
+        },
+        {
+          heading:"Move at the speed of your ideas",
+          text:"Make agility your competitive advantage, with our talent network you’ll spend less time searching for the help you need to make your ideas a reality."
+        },
 
 
       ]}
     />
-
-
-    <Explainer
-      sections={[
-        {heading:"MC.Ventures", text:"You'll love working with our developers, they are some of the finest and brightest in the industry (they've worked at some of the largest brands too)."},
-        {heading:"MC.Labs", text:"Talk about the hub, proactive, and real time communications, zoom meetings? image? etc."}
+    <Plan
+      headline={<span>Welcome to <u>Managed Commerce</u></span>}
+      icon="ti-map-alt"
+      dek=""
+      steps={[
+        {heading:'Create your tasks', text:'Send your todo list, wish list, and any ad hoc requests as they come.'},
+        {heading:'Work with an expert', text:'Watch your task list disappear with real time updates on progress.'},
+        {heading:'Do your thing', text:'Focus on growing your business and keeping your customers happy.'}
       ]}
     />
 
