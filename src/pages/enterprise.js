@@ -34,7 +34,7 @@ const EnterprisePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={<span>We're the <u>trusted</u> technical partner for your Shopify store.</span>}
+      headline={<span>Your <u>trusted</u> Shopify technical partner.</span>}
       dek="Focus on building your business. Leave the tech to us."
       hero={
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
@@ -94,7 +94,17 @@ const EnterprisePage = ({data}) => (
     <Plan
       headline={<span>Welcome to <u>Managed Commerce</u></span>}
       icon="ti-map-alt"
-      dek=""
+      dek={<span>
+      As one of the fastest growing managed service providers for Shopify we
+      understand your problems running a Shopify store at scale are complex –
+      multiple app vendors, unclear support channels, flakey integrations,
+      non-technical digital agencies, and an unpredictable talent market.<br/><br/>
+      The Managed Commerce idea is simple, we take all that off your plate,
+      we are your tech team, your “CTO”, and your single point of contact for
+      Shopify tech requests. We approach this from the perspective of our
+      founders’ deep tech background running sites like Amazon, Groupon, Google
+      and Microsoft. You’ll not find a more dependable, responsive, and
+      enterprise ready technical partner for your ecommerce business.</span>}
       steps={[
         {heading:'Create your tasks', text:'Send your todo list, wish list, and any ad hoc requests as they come.'},
         {heading:'Work with an expert', text:'Watch your task list disappear with real time updates on progress.'},

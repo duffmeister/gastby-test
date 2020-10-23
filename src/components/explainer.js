@@ -26,7 +26,7 @@ const Explainer = ({headline, dek, icon, sections}) => (
               <div class="col-lg-5 offset-lg-1 mt-2 mb-5">
                   <div class="features-desc">
                       <h2>{section.heading}</h2>
-                      <p class="text-muted mt-3">{section.text}.</p>
+                      <p class="title-subtitle text-muted mt-3">{section.text}.</p>
                   </div>
               </div>
           </div>
