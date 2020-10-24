@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "./image"
 
-const Hero = ({headline, dek, hero, cta, ctaLink, bullets}) => (
+const Hero = ({headline, dek, hero, stackImage, cta, ctaLink, bullets}) => (
 
   <section class="section bg-home" id="home">
     <div class="home-center">
@@ -22,11 +22,16 @@ const Hero = ({headline, dek, hero, cta, ctaLink, bullets}) => (
                                 ))}
                               </ul>
                             : <></> }
-                            { cta != "" ?
+                            { !!cta ?
                             <div class="mt-5 mb-3">
                                 <a href={ctaLink} style={{fontSize:"1.2em"}} class="btn btn-lg btn-cta">{cta}</a>
                             </div>
                             : <></> }
+                            { !!stackImage ?
+                              <div class="mt-5 mb-3">
+                                <img style={{maxWidth:"250px"}} src={stackImage}/>
+                              </div>
+                            : <></>}
                         </div>
                     </div>
                     <div class="col-lg-5 mt-0 pt-0">

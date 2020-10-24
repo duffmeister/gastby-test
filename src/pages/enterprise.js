@@ -34,7 +34,7 @@ const EnterprisePage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      headline={<span>Your <u>trusted</u> Shopify technical partner.</span>}
+      headline={<span>Your <u>Shopify</u> CTO...as a Service.</span>}
       dek="Focus on building your business. Leave the tech to us."
       hero={
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
@@ -113,10 +113,13 @@ const EnterprisePage = ({data}) => (
     />
 
     <Cards
-      headline="Access to the bleeding edge of ecommerce"
+      headline="Your portfolio of enterprise services"
+      dek=""
       cards={[
-        {heading:'MC.Ventures', class:'large', text:'Seed stage investment in innovative ecommerce technology products.'},
-        {heading:'MC.Labs', class:'large', text:'Pre-launch early access program'},
+        {heading:'MC.Staffing', text:'Quickly add full-time and contingent staff with shopify experience to your team.'},
+        {heading:'MC.Content', text:'Innovative content solutions for native and branded media campaigns.'},
+        {heading:'Research', text:'Fact and science based insights for e-commerce leaders'},
+        {heading: 'Labs', text:'Future facing Shopify e-commerce tools and innovations'}
       ]}
     />
   </Layout>

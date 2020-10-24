@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import {Link} from "gatsby"
 
 const Explainer = ({headline, dek, icon, sections}) => (
 
@@ -27,6 +28,9 @@ const Explainer = ({headline, dek, icon, sections}) => (
                   <div class="features-desc">
                       <h2>{section.heading}</h2>
                       <p class="title-subtitle text-muted mt-3">{section.text}.</p>
+                      { !!section.cta ?
+                        <Link to={section.ctaLink} className="btn btn-cta">{section.cta}</Link>
+                      : <></>}
                   </div>
               </div>
           </div>
