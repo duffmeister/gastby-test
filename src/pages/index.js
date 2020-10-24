@@ -47,31 +47,13 @@ const IndexPage = ({data}) => (
         {icon: "ti-check-box", text: "Fix bugs and design issues"},
         {icon: "ti-settings", text: "Intall apps an configure integration"}
       ]}/>
-    <Features
-      logo={partnerLogo}
-      nuts={[
-        {
-          icon: "ti-timer",
-          heading: "Blazing fast turnaround",
-          text: "Blitz through your list of site tweaks and updates."
-        },
-        {
-          icon: "ti-heart",
-          heading: "Help you can depend on",
-          text: "No HR issues, interviews, expensive agencies, or flakey contractors."
-        },
-        {
-          icon: "ti-star",
-          heading: "All star Shopify experts",
-          text: "Work with an awesome team of top Shopify experts."
-        }
-      ]}
-    />
     <SimpleLogos
       logos={partnerLogos}
     />
 
     <Explainer
+      headline={<>Managed Commerce <u>Services</u></>}
+      dek="Discover a range of sevices for your business, be it just starting up or growing like crazy"
       sections={[
         {
           heading:"Unlimited Shopify technical help",
