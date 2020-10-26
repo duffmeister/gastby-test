@@ -125,6 +125,10 @@ a {
     border-radius: 30px;
 }
 
+.btn-cta{
+  font-size: 1.2em;
+}
+
 .vertical-content {
     display: -webkit-flex;
     display: -moz-flex;
@@ -287,6 +291,10 @@ a {
 .navbar-custom .navbar-brand {
     color: #fff !important;
     text-transform: uppercase;
+}
+
+.navbar-custom .btn-cta {
+    font-size: 0.9em;
 }
 
 .navbar-custom .navbar-nav li a:hover,
