@@ -29,7 +29,7 @@ const Explainer = ({headline, dek, icon, sections}) => (
                       <h2>{section.heading}</h2>
                       <p class="title-subtitle text-muted mt-3">{section.text}.</p>
                       { !!section.cta ?
-                        <Link to={section.ctaLink} className="btn btn-cta mt-3">{section.cta}</Link>
+                        <Link to={section.ctaLink} className="btn btn-cta mt-3 intercom">{section.cta}</Link>
                       : <></>}
                   </div>
               </div>

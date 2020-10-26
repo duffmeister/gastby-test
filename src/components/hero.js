@@ -24,7 +24,7 @@ const Hero = ({headline, dek, hero, stackImage, cta, ctaLink, bullets}) => (
                             : <></> }
                             { !!cta ?
                             <div class="mt-5 mb-3">
-                                <a href={ctaLink} style={{fontSize:"1.2em"}} class="btn btn-lg btn-cta">{cta}</a>
+                                <a href={ctaLink} style={{fontSize:"1.2em"}} class="btn btn-lg btn-cta intercom">{cta}</a>
                             </div>
                             : <></> }
                             { !!stackImage ?

@@ -25,14 +25,14 @@ const Navigation = () => (
                 <Link to="/enterprise" className="nav-link" activeClassName="nav-link active">Enterprise</Link>
               </li>
               <li className="nav-item">
-                <Link to="/faststart" className="nav-link" activeClassName="nav-link active">FastStart</Link>
-              </li>
-              <li className="nav-item">
                 <Link to="/pricing" className="nav-link" activeClassName="nav-link active">Pricing</Link>
               </li>
-              {/*<li className="nav-item">
+              <li className="nav-item">
                 <Link to="/about" className="nav-link" activeClassName="nav-link active">About Us</Link>
-              </li>*/}
+              </li>
+              <li className="nav-item">
+                <Link to="/careers" className="nav-link" activeClassName="nav-link active">Careers</Link>
+              </li>
           </ul>
         </div>
         <div id="navbar-button">
@@ -40,7 +40,7 @@ const Navigation = () => (
             <li className="list-inline-item">
                 <Link to="https://mcco.zendesk.com/hc" className="nav-link" activeClassName="nav-link active">Sign In</Link>
             </li>
-            <li className="list-inline-item"><a href="#" className="btn btn-cta">Try for free</a></li>
+            <li className="list-inline-item"><a href="#" className="btn btn-cta intercom">Try for free</a></li>
           </ul>
         </div>
       </div>

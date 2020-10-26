@@ -35,7 +35,7 @@ const Plan = ({headline, dek, icon, steps}) => (
             <div class="col-lg-12 mt-5">
                 <div class="text-center">
                     <div class="">
-                        <a href="#" style={{fontSize:"1.1em"}} class="btn btn-cta">Try for free</a>
+                        <a href="#" style={{fontSize:"1.1em"}} class="btn btn-cta intercom">Try for free</a>
                     </div>
                 </div>
             </div>
