@@ -64,6 +64,7 @@ const UnlimitedPage = ({data}) => (
         <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       }
       cta="Try for free"
+      ctaLink="javascript:document.getElementById('launchChat').click();"
       bullets={[
         {icon: "ti-bar-chart", text: "Improve your conversion rates and performance"},
         {icon: "ti-check-box", text: "Fix bugs and design issues"},
@@ -140,6 +141,7 @@ const UnlimitedPage = ({data}) => (
     <CTA
       heading="Take us for a spin, create a free task..."
       cta="Try for free"
+      ctaLink="#"
     />
   </Layout>
 )

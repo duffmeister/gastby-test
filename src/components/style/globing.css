@@ -545,7 +545,9 @@ u {
 **********************/
 
 .inverted {
-  background: #457B9D;
+  
+  background: rgb(85,144,180);
+  background: linear-gradient(135deg, rgba(85,144,180,1) 35%, rgba(56,100,128,1) 100%);
 }
 
 .services-box {
