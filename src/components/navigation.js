@@ -40,7 +40,7 @@ const Navigation = () => (
             <li className="list-inline-item">
                 <Link to="https://managedcommerce.zendesk.com/hc" className="nav-link" activeClassName="nav-link active">Sign In</Link>
             </li>
-            <li className="list-inline-item"><a href="#" className="btn btn-cta intercom" id="launchChat">Try for free</a></li>
+            <li className="list-inline-item"><a href="javascript:document.getElementById('launchFreeTrial').click();" className="btn btn-cta intercom" id="launchChat">Try for free</a></li>
           </ul>
         </div>
       </div>
