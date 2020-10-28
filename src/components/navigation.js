@@ -38,7 +38,7 @@ const Navigation = () => (
         <div id="navbar-button">
           <ul className="text-right list-unstyled list-inline mb-0 nav-social">
             <li className="list-inline-item">
-                <Link to="https://mcco.zendesk.com/hc" className="nav-link" activeClassName="nav-link active">Sign In</Link>
+                <Link to="https://managedcommerce.zendesk.com/hc" className="nav-link" activeClassName="nav-link active">Sign In</Link>
             </li>
             <li className="list-inline-item"><a href="#" className="btn btn-cta intercom" id="launchChat">Try for free</a></li>
           </ul>
