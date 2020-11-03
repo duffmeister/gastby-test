@@ -13,7 +13,12 @@ const ThanksPage = () => (
     <SEO title="Thanks" />
     <Hero
       headline={<span>Thank you! Check your <u>email</u></span>}
-      dek="You are all set. We've sent you an email with some instructions to finish creating your account."
+      dek={<span>We've sent an email with a confirmation link.<br/><br/>Here's what's next:</span>}
+      bullets={[
+        {icon: "ti-arrow-right", text: "Confirm your email address and set a password."},
+        {icon: "ti-arrow-right", text: "We'll do a review of your request to clarify any details."},
+        {icon: "ti-arrow-right", text: "We'll assign it to an expert and get to work."}
+      ]}/>
     />
   </Layout>
 )
